@@ -57,7 +57,7 @@ if ( window.location.href.includes( "lang=english" ) ) {
         $( '.horario_parte_2' ).innerHTML = `
             4:00 PM - BREAK<br>
             5:00 PM - OPENING CEREMONY<br>
-            5:30 PM - TEAM FORMATION, IDEATION, Y COMIENZO DEL HACKEO<br>
+            5:30 PM - TEAM FORMATION, IDEATION, AND BEGIN HACK<br>
             7:00 PM - END OF HACK FOR THE DAY<br><br>
 
             <span style="font-family: Ultrabold_GraublauWeb;">SATURDAY</span><br>
