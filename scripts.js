@@ -1,4 +1,4 @@
-$( '.title_and_subtitle' ).onclick = () => {window.location.href = './new_index.html';}
+$( '.title_and_subtitle' ).onclick = () => {window.location.href = './';}
 $( '.lang_btn_1' ).onclick = () => {window.location.href = window.location.protocol + "//" + window.location.hostname + window.location.pathname + "?lang=english";}
 $( '.lang_btn_2' ).onclick = () => {window.location.href = window.location.protocol + "//" + window.location.hostname + window.location.pathname + "?lang=english";}
 $( '.mentores_btn' ).onclick = () => {window.location.href = "./mentores.html";}
@@ -6,7 +6,7 @@ $( '.larp_btn' ).onclick = () => {window.open( "https://www.base58.info/classes/
 $( '.horario_btn' ).onclick = () => {window.location.href = "./horario.html";}
 $( '.contacto_btn' ).onclick = () => {window.location.href = "./contacto.html";}
 if ( window.location.href.includes( "lang=english" ) ) {
-    $( '.title_and_subtitle' ).onclick = () => {window.location.href = './new_index.html' + "?lang=english";}
+    $( '.title_and_subtitle' ).onclick = () => {window.location.href = './' + "?lang=english";}
     $( '.subtitle' ).innerText = `Friday November 29 - Sunday December 1, 2024`;
     $( '.lang_btn_1 span' ).innerText = `Español`;
     $( '.lang_btn_1' ).onclick = () => {window.location.href = window.location.protocol + "//" + window.location.hostname + window.location.pathname;}
@@ -20,7 +20,7 @@ if ( window.location.href.includes( "lang=english" ) ) {
     $( '.contacto_btn' ).onclick = () => {window.location.href = "./contacto.html?lang=english";}
     var idx = window.location.pathname.lastIndexOf( "/" );
     var page_were_on = window.location.pathname.substring( idx + 1 );
-    if ( page_were_on === "new_index.html" ) {
+    if ( page_were_on === "" ) {
         $( '.que_es_label' ).innerText = `What is it?`;
         $( '.que_es_descripcion' ).innerText = `Come to the first bitcoin-focused hackathon in Guadalajara, Mexico! Have an idea for how to improve bitcoin? Want to meet other bitcoiners and hack something out? Join us and help make the dream of sound, digital money come true!`;
         $( '.donde_es_label' ).innerText = `Where is it?`;
