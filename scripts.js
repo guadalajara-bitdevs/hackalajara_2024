@@ -18,6 +18,10 @@ if ( window.location.href.includes( "lang=english" ) ) {
     $( '.horario_btn' ).onclick = () => {window.location.href = "./horario.html?lang=english";}
     $( '.contacto_btn span' ).innerText = `Contact`;
     $( '.contacto_btn' ).onclick = () => {window.location.href = "./contacto.html?lang=english";}
+    // bitcoin address generation logic
+    
+
+    // translation logic
     var idx = window.location.pathname.lastIndexOf( "/" );
     var page_were_on = window.location.pathname.substring( idx + 1 );
     if ( page_were_on === "" ) {

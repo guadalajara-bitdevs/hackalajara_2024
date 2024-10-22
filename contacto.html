@@ -4,11 +4,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no">
         <link rel="stylesheet" href="./style.css?v=2">
-        <script src="https://supertestnet.github.io/hedgehog/noble-secp256k1.js"></script>
+        <!-- <script src="https://supertestnet.github.io/hedgehog/noble-secp256k1.js"></script> -->
         <script src="https://supertestnet.github.io/bitcoin-chess/js/qrcode.js"></script>
         <script src="https://supertestnet.github.io/nwcjs/nwcjs.js"></script>
         <script src="https://bundle.run/browserify-cipher@1.0.1"></script>
         <script src="https://bundle.run/bech32@2.0.0"></script>
+        <script src="https://bundle.run/buffer@6.0.3"></script>
+        <script src="https://bundle.run/bip32@2.0.6"></script>
+        <script src="https://bitcoincore.tech/apps/bitcoinjs-ui/lib/bitcoinjs-lib.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
         <style>
             .hidden {
                 display: none !important;
@@ -70,6 +74,57 @@
             var $_GET = {}
             for ( var key of url_keys ) $_GET[ key ] = url_params.get( key );
         </script>
+        <script>var Buffer = buffer.Buffer;</script>
+        <script>
+            // Use bitcoinjs-lib and bip32, make sure they are loaded before using
+            var xpub = "xpub69XtY3jLnorfx2ci8WHYfY8bjvD4cRKn9YnA12KEAzfQerkMjxKXuA7mkmjaySVv3stN7zJFtxRp3shsE4MiGdCSn9NeJDpE3cQ4WMQHqwU";
+            
+            var getPubkeyFromXpub = (xpub, index) => {
+                return bip32.fromBase58(xpub).derive(index).publicKey.toString("hex");
+            };
+
+            function getNativeSegwitAddressFromPubkeyHex(pubkeyhex, network) {
+                return bitcoinjs.payments.p2wpkh({
+                    pubkey: Buffer.from(pubkeyhex, "hex"), 
+                    network: bitcoinjs.networks[network]
+                }).address;
+            }
+
+            async function addressOnceHadMoney(address, network) {
+                var fetched = await fetch("https://mempool.space/api/address/" + address);
+                var json = await fetched.json();
+                return (json["chain_stats"]["tx_count"] > 0 || json["mempool_stats"]["tx_count"] > 0);
+            }
+
+            (async () => {
+                var network = "mainnet"; // Change to "testnet" if you're using testnet
+                var pubkey = getPubkeyFromXpub(xpub, 0);
+                var address = getNativeSegwitAddressFromPubkeyHex(pubkey, network);
+                var had_money = await addressOnceHadMoney(address, network);
+                console.log("Here is your address:", address);
+                console.log("That address once had money, right?", had_money);
+
+                var counter = 0;
+                while (had_money) {
+                    counter++;
+                    pubkey = getPubkeyFromXpub(xpub, counter);
+                    address = getNativeSegwitAddressFromPubkeyHex(pubkey, network);
+                    had_money = await addressOnceHadMoney(address, network);
+                    console.log("Here is your address:", address);
+                    console.log("That address once had money, right?", had_money);
+                }
+
+                // Update UI with the address
+                document.querySelector(".donation-address").innerText = address;
+
+                // Generate QR Code (use qrious library or similar)
+                var qr = new QRious({
+                    element: document.getElementById('qr-code'),
+                    value: address,
+                    size: 200 // Adjust size as needed
+                });
+            })();
+        </script>
     </head>
     <body>
         <div class="all_content">
@@ -105,7 +160,8 @@
             <p class="uppercase pgraph donation-address">
                 Loading...
             </p>
-            
+            <canvas id="qr-code"></canvas>
+
 
             <h2 class="ultrabold uppercase contacto_label">
                 CONTACTO
