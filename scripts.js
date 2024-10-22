@@ -78,6 +78,7 @@ if ( window.location.href.includes( "lang=english" ) ) {
         `;
     }
     if ( page_were_on === "contacto.html" ) {
+        $( '.donaciones_label' ).innerText = `Donations`;
         $( '.contacto_label' ).innerText = `Contact`;
         $( '.contacto_ul' ).innerHTML = `
         <li><a href="https://twitter.com/super_testnet" target="_blank">@super_testnet</a> on twitter</li>
