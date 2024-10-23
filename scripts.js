@@ -79,6 +79,16 @@ if ( window.location.href.includes( "lang=english" ) ) {
     }
     if ( page_were_on === "contacto.html" ) {
         $( '.donaciones_label' ).innerText = `Donations`;
+        $( '.apoyos' ).innerHTML = `
+        <p>Sponsorship supports</p>
+        <ul>
+            <li>Prize Money Hackthon (3 categories)</li>
+            <li>Local Bitcoin and LN Developers</li>
+            <li>Venue and Facilities</li>
+            <li>Travel Grants</li>
+            <li>Stipdends for Devs from other communities in Mexico</li>
+        </ul>
+        `;
         $( '.contacto_label' ).innerText = `Contact`;
         $( '.contacto_ul' ).innerHTML = `
         <li><a href="https://twitter.com/super_testnet" target="_blank">@super_testnet</a> on twitter</li>
