@@ -35,6 +35,7 @@ if ( window.location.href.includes( "lang=english" ) ) {
             <li>Best education hack - prize of 0.013 BTC (valued at $18,500 MXN currently)</li>
         `;
         $( '.categorias_descripcion' ).innerText = ``;
+        $( '.registrarse_btn span' ).innerText = `Register here`;
     }
     if ( page_were_on === "mentores.html" ) {
         $( '.mentores_label' ).innerText = `Mentors`;
