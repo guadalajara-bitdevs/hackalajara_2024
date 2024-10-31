@@ -28,13 +28,13 @@ if ( window.location.href.includes( "lang=english" ) ) {
         $( '.que_es_label' ).innerText = `What is it?`;
         $( '.que_es_descripcion' ).innerText = `Come to the first bitcoin-focused hackathon in Guadalajara, Mexico! Have an idea for how to improve bitcoin? Want to meet other bitcoiners and hack something out? Join us and help make the dream of sound, digital money come true!`;
         $( '.donde_es_label' ).innerText = `Where is it?`;
-        $( '.categorias_label' ).innerText = `Prize categories (tentative)`;
+        $( '.categorias_label' ).innerText = `Prize categories`;
         $( '.categorias' ).innerHTML = `
-            <li>Best programming hack</li>
-            <li>Best design hack</li>
-            <li>Best education hack</li>
+            <li>Best programming hack - prize of 0.013 BTC (valued at $18,500 MXN currently)</li>
+            <li>Best design hack - prize of 0.013 BTC (valued at $18,500 MXN currently)</li>
+            <li>Best education hack - prize of 0.013 BTC (valued at $18,500 MXN currently)</li>
         `;
-        $( '.categorias_descripcion' ).innerText = `Prizes to be determined -- but it's money!`;
+        $( '.categorias_descripcion' ).innerText = ``;
     }
     if ( page_were_on === "mentores.html" ) {
         $( '.mentores_label' ).innerText = `Mentors`;
@@ -46,18 +46,16 @@ if ( window.location.href.includes( "lang=english" ) ) {
         `;
     }
     if ( page_were_on === "horario.html" ) {
-        $( '.horario_label' ).innerText = `SCHEDULE (TENTATIVE)`;
+        $( '.horario_label' ).innerText = `SCHEDULE`;
         $( '.horario_parte_1' ).innerHTML = `
             <span style="font-family: Ultrabold_GraublauWeb;">THURSDAY</span><br>
             2:00 PM - LARP IN THE PARK<br><br>
 
             <span style="font-family: Ultrabold_GraublauWeb;">FRIDAY</span><br>
-            2:00 PM - SPONSORED WORKSHOPS<br>
+            2:00 PM - POTENTIAL WORKSHOP<br>
+            3:00 PM - KAPITALEX WORKSHOP<br>
         `;
-        $( '.horario_ul' ).innerHTML = `
-            <li>IF WE GET SPONSORS WHO *WANT* TO DO A WORKSHOP, WE CAN SLOT THEM HERE</li>
-            <li>OTHERWISE, THE EVENT OFFICIALLY STARTS AT 5PM ANYWAY, SO NO LOSS</li>
-        `;
+        $( '.horario_ul' ).innerHTML = ``;
         $( '.horario_parte_2' ).innerHTML = `
             4:00 PM - BREAK<br>
             5:00 PM - OPENING CEREMONY<br>
