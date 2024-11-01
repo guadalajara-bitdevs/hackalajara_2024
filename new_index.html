@@ -69,9 +69,6 @@
                 padding-top: 1rem;
             }
             .centerable {
-/*                display: flex;*/
-/*                flex-direction: column;*/
-/*                justify-content: center;*/
                 text-align: center;
             }
             .centerable p {
@@ -160,9 +157,6 @@
                 justify-content: space-around;
                 margin-top: 3rem;
             }
-            .lang_btn_2 {
-                display: none;
-            }
             .face {
                 display: inline-block;
                 width: 200px;
@@ -195,12 +189,6 @@
                     border-bottom: 1px solid white;
                     width: 100%;
                 }
-                .lang_btn_1 {
-                    display: none;
-                }
-                .lang_btn_2 {
-                    display: flex;
-                }
                 .indented_left {
                     margin-left: auto;
                 }
@@ -221,14 +209,16 @@
     </head>
     <body>
         <div class="all_content">
-            <img style="width: 100%; max-width: 700px" src="https://hackalajara.xyz/hackalajara-logo.png">
-            <div class="centerable">
-                <p class="uppercase subtitle">
-                    Viernes 29 de Noviembre - Domingo 1 de Deciembre de 2024
-                </p>
-                <p class="uppercase sub_subtitle">
-                    Presentado por
-                </p>
+            <div class="title_and_subtitle">
+                <img style="width: 100%; max-width: 700px" src="https://hackalajara.xyz/hackalajara-logo.png">
+                <div class="centerable">
+                    <p class="uppercase subtitle">
+                        Viernes 29 de Noviembre - Domingo 1 de Deciembre de 2024
+                    </p>
+                    <p class="uppercase sub_subtitle">
+                        Presentado por
+                    </p>
+                </div>
             </div>
             <div class="logos">
                 <div>
@@ -304,9 +294,11 @@
                 <p class="uppercase pgraph mentores_descripcion">
                     PARA AQUELLOS QUE AÚN NO SE SIENTEN CÓMODOS PROGRAMANDO O NO ESTÁN SEGUROS DE QUÉ HACER, TENDREMOS MENTORES DISPONIBLES PARA AYUDARLES. ELLOS RECORRERÁN EL ÁREA MIENTRAS LOS PARTICIPANTES ESTÁN PROGRAMANDO Y PUEDES LLAMARLOS Y PREGUNTARLES "¿CUÁL SERÍA UN BUEN PROYECTO?" O "¿PUEDES AYUDARME A ENCONTRAR UN EQUIPO?" O "NO ESTOY SEGURO DE CÓMO RESOLVER ESTE PROBLEMA DE PROGRAMACIÓN" Y TE AYUDARÁN. TAMBIÉN TENEMOS JUEZES DEL HACKATHON QUE DETERMINARAN LOS GANADORES DEL HACKATHON.
                 </p>
-                <p class="uppercase pgraph">CAR GONZALEZ - DISEÑADOR EN BITCOIN Y LÍDER DE PLEBLAB EN AUSTIN, TEXAS</p>
-                <p class="uppercase pgraph">TOPHER SCOTT - CREADOR DE LIBRERIAS CRIPTOGRÁPHICAS Y CTO DE BITESCROW</p>
-                <p class="uppercase pgraph">SUPER TESTNET - EXPERTO EN SCRIPT DE BITCOIN Y DESARROLLO DE PROTOCOLOS DE CAPA DOS</p>
+                <div class="mentores_pgraph">
+                    <p class="uppercase pgraph">CAR GONZALEZ - DISEÑADOR EN BITCOIN Y LÍDER DE PLEBLAB EN AUSTIN, TEXAS</p>
+                    <p class="uppercase pgraph">TOPHER SCOTT - CREADOR DE LIBRERIAS CRIPTOGRÁPHICAS Y CTO DE BITESCROW</p>
+                    <p class="uppercase pgraph">SUPER TESTNET - EXPERTO EN SCRIPT DE BITCOIN Y DESARROLLO DE PROTOCOLOS DE CAPA DOS</p>
+                </div>
                 <div class="face" style="background-image: url('https://hackalajara.xyz//car-face.png')"></div>
                 <div class="face" style="background-image: url('https://hackalajara.xyz/topher-face.png')"></div>
                 <div class="face" style="background-image: url('https://hackalajara.xyz/super-face.png')"></div>
@@ -367,11 +359,12 @@
                 <p class="bottom_line"></p>
             </div>
             <center>
-                <div class="seccion btn contacto_btn" onclick="window.location.href = 'https://hackalajara.xyz/contacto.html';">
+                <div class="seccion btn contacto_btn">
                     <span style="margin-top: 5px;">Contacto</span>
                     <span>&gt;</span>
                 </div>
             </center>
         </div> <!-- end of all_content -->
+        <script src="./new_scripts.js?v=0"></script>
     </body>
 </html>
