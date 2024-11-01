@@ -66,8 +66,13 @@
                 text-transform: uppercase;
             }
             .centerable {
-                display: flex;
-                justify-content: space-around;
+/*                display: flex;*/
+/*                flex-direction: column;*/
+/*                justify-content: center;*/
+                text-align: center;
+            }
+            .centerable p {
+                margin: auto;
             }
             .title_and_subtitle {
                 cursor: pointer;
@@ -92,6 +97,7 @@
             }
             .sub_subtitle {
                 border-bottom: 0;
+                margin-top: 1rem !important;
             }
             .logos {
                 display: flex;
@@ -212,28 +218,14 @@
     </head>
     <body>
         <div class="all_content">
+            <img style="width: 100%; max-width: 700px" src="file:///home/supertestnet/Documents/hackalajara/hackalajara-logo.png">
             <div class="centerable">
-                <div class="title_and_subtitle">
-                    <div class="funkyfont uppercase title">
-                        <span>H</span>
-                        <span>a</span>
-                        <span>c</span>
-                        <span>k</span>
-                        <span>a</span>
-                        <span>l</span>
-                        <span>a</span>
-                        <span>j</span>
-                        <span>a</span>
-                        <span>r</span>
-                        <span>a</span>
-                    </div>
-                    <p class="uppercase subtitle">
-                        Viernes 29 de Noviembre - Domingo 1 de Deciembre de 2024
-                    </p>
-                    <p class="uppercase sub_subtitle">
-                        Presentado por
-                    </p>
-                </div>
+                <p class="uppercase subtitle">
+                    Viernes 29 de Noviembre - Domingo 1 de Deciembre de 2024
+                </p>
+                <p class="uppercase sub_subtitle">
+                    Presentado por
+                </p>
             </div>
             <div class="logos">
                 <div>
