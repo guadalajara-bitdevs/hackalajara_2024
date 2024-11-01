@@ -13,6 +13,8 @@ if ( window.location.href.includes( "lang=english" ) ) {
     var idx = window.location.pathname.lastIndexOf( "/" );
     var page_were_on = window.location.pathname.substring( idx + 1 );
     if ( page_were_on === "" || page_were_on === "new_hackalajara_webpage.html" || page_were_on === "new_index.html" || page_were_on === "index.html" ) {
+        $( '.sub_subtitle' ).innerText = `Presented by`;
+        $( '.patrocinadores_label' ).innerText = `Sponsored by`;
         $( '.que_es_label' ).innerText = `What is it?`;
         $( '.que_es_descripcion' ).innerText = `Come to the first bitcoin-focused hackathon in Guadalajara, Mexico! Have an idea for how to improve bitcoin? Want to meet other bitcoiners and hack something out? Join us and help make the dream of sound, digital money come true!`;
         $( '.donde_es_label' ).innerText = `Where is it?`;
