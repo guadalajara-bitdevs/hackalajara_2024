@@ -18,11 +18,11 @@ if ( window.location.href.includes( "lang=english" ) ) {
         $( '.que_es_label' ).innerText = `What is it?`;
         $( '.que_es_descripcion' ).innerText = `Come to the first bitcoin-focused hackathon in Guadalajara, Mexico! Have an idea for how to improve bitcoin? Want to meet other bitcoiners and hack something out? Join us and help make the dream of sound, digital money come true!`;
         $( '.donde_es_label' ).innerText = `Where is it?`;
-        $( '.categorias_label' ).innerText = `Prize categories`;
         $( '.categorias' ).innerHTML = `
-            <li>Best programming hack - prize of 0.013 BTC (valued at $18,500 MXN currently)</li>
-            <li>Best design hack - prize of 0.013 BTC (valued at $18,500 MXN currently)</li>
-            <li>Best education hack - prize of 0.013 BTC (valued at $18,500 MXN currently)</li>
+            <h2 class="ultrabold uppercase categorias_label">Prize categories</h2>
+            <p class="uppercase pgraph">Best programming hack - prize of 0.013 BTC (valued at $18,500 MXN currently)</p>
+            <p class="uppercase pgraph">Best design hack - prize of 0.013 BTC (valued at $18,500 MXN currently)</p>
+            <p class="uppercase pgraph">Best education hack - prize of 0.013 BTC (valued at $18,500 MXN currently)</p>
         `;
         $( '.registrar_btn span' ).innerText = `Register here`;
         $( '.mentores_label' ).innerText = `Mentors and Judges`;
