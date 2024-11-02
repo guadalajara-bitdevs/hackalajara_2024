@@ -25,7 +25,7 @@ if ( window.location.href.includes( "lang=english" ) ) {
             <li>Best education hack - prize of 0.013 BTC (valued at $18,500 MXN currently)</li>
         `;
         $( '.registrar_btn span' ).innerText = `Register here`;
-        $( '.mentores_label' ).innerText = `Mentors`;
+        $( '.mentores_label' ).innerText = `Mentors and Judges`;
         $( '.mentores_descripcion' ).innerText = `For those who aren't yet comfortable coding or aren't sure what to do, we'll have mentors available to help you! They will walk around the area while folks are coding and you can flag them down and say, "What's a good project idea?" or "Can you help me find a team?" or "I'm not sure how to solve this programming problem" and they will help you out. We also have judges of the hackathon who will determine the winners of the hackathon.`;
         $( '.mentores_pgraph' ).innerHTML = `
             <p class="uppercase pgraph">CAR GONZALEZ - DESIGNER IN BITCOIN AND LEADER OF PLEBLAB IN AUSTIN, TEXAS</p>
