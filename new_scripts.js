@@ -38,8 +38,8 @@ if ( window.location.href.includes( "lang=english" ) ) {
             2:00 PM - LARP IN THE PARK<br><br>
 
             <span style="font-family: Ultrabold_GraublauWeb;">FRIDAY</span><br>
-            2:00 PM - POTENTIAL WORKSHOP<br>
-            3:00 PM - KAPITALEX WORKSHOP<br>
+            2:00 PM - BASE58 WORKSHOP (ONLINE)<br>
+            3:00 PM - KAPITALEX WORKSHOP (LIVE)<br>
             4:00 PM - BREAK<br>
             5:00 PM - OPENING CEREMONY<br>
             5:30 PM - TEAM FORMATION, IDEATION, AND BEGIN HACK<br>
