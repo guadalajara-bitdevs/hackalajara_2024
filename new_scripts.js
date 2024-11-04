@@ -1,13 +1,13 @@
 $( '.title_and_subtitle' ).onclick = () => {window.location.href = './';}
 $( '.lang_btn' ).onclick = () => {window.location.href = window.location.protocol + "//" + window.location.hostname + window.location.pathname + "?lang=english";}
-$( '.contacto_btn' ).onclick = () => {window.location.href = "./contacto.html";}
+$( '.contacto_btn' ).onclick = () => {window.location.href = "./nuevo_contacto.html";}
 if ( window.location.href.includes( "lang=english" ) ) {
     $( '.title_and_subtitle' ).onclick = () => {window.location.href = './' + "?lang=english";}
     $( '.subtitle' ).innerText = `Friday November 29 - Sunday December 1, 2024`;
     $( '.lang_btn span' ).innerText = `Español`;
     $( '.lang_btn' ).onclick = () => {window.location.href = window.location.protocol + "//" + window.location.hostname + window.location.pathname;}
     $( '.contacto_btn span' ).innerText = `Contact`;
-    $( '.contacto_btn' ).onclick = () => {window.location.href = "./contacto.html?lang=english";}
+    $( '.contacto_btn' ).onclick = () => {window.location.href = "./nuevo_contacto.html?lang=english";}
 
     // translation logic
     var idx = window.location.pathname.lastIndexOf( "/" );
@@ -58,25 +58,5 @@ if ( window.location.href.includes( "lang=english" ) ) {
             TO BE ANNOUNCED - PRESENT WINNERS<br>
         `;
         $( '.alojamientos_label' ).innerText = `ACCOMODATIONS`;
-    }
-    if ( page_were_on === "contacto.html" ) {
-        $( '.donaciones_label' ).innerText = `Donations`;
-        $( '.apoyos' ).innerHTML = `
-        <p>Sponsorship supports</p>
-        <ul>
-            <li>Prize Money Hackthon (3 categories)</li>
-            <li>Local Bitcoin and LN Developers</li>
-            <li>Venue and Facilities</li>
-            <li>Travel Grants</li>
-            <li>Stipdends for Devs from other communities in Mexico</li>
-        </ul>
-        `;
-        $( '.contacto_label' ).innerText = `Contact`;
-        $( '.contacto_ul' ).innerHTML = `
-        <li><a href="https://twitter.com/super_testnet" target="_blank">@super_testnet</a> on twitter</li>
-        <li><a href="https://t.me/supertestnet" target="_blank">@supertestnet</a> on telegram</li>
-        <li><a href="https://njump.me/nprofile1qy88wumn8ghj7mn0wvhxcmmv9uq32amnwvaz7tmwdaehgu3wdau8gu3wv3jhvtcpz4mhxue69uhhyetvv9ujumn0wd68ytnzvuhsqgpps055wkzgr583ynaaj0zkej4ytel9gh8whr2jsj8esfflf9aew5p96hus" target="_blank">Super Testnet</a> on nostr</li>
-        <li><a href="https://www.youtube.com/@highlevelbitcoin" target="_blank">High Level Bitcoin</a> on youtube</li>
-        `;
     }
 }
