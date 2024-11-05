@@ -31,6 +31,7 @@ if ( window.location.href.includes( "lang=english" ) ) {
             <p class="uppercase pgraph">CAR GONZALEZ - DESIGNER IN BITCOIN AND LEADER OF PLEBLAB IN AUSTIN, TEXAS</p>
             <p class="uppercase pgraph">TOPHER SCOTT - CREATOR OF CRYPTOGRAPHIC LIBRARIES AND CTO OF BITESCROW</p>
             <p class="uppercase pgraph">SUPER TESTNET - EXPERT IN BITCOIN SCRIPT AND DEVELOPER OF LAYER TWO PROTOCOLS</p>
+            <p class="uppercase pgraph">GUSTAVO ECHAIZ - PRESIDENT OF SWAPIDO.COM AND TECHNICAL WRITER AT BITCOIN OPTECH</p>
         `;
         $( '.horario_label' ).innerText = `SCHEDULE`;
         $( '.horario_parte_1' ).innerHTML = `
