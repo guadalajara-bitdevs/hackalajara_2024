@@ -44,11 +44,13 @@ if ( window.location.href.includes( "lang=english" ) ) {
             4:00 PM - BREAK<br>
             5:00 PM - OPENING CEREMONY<br>
             5:30 PM - TEAM FORMATION, IDEATION, AND BEGIN HACK<br>
-            7:00 PM - END OF HACK FOR THE DAY<br><br>
+            7:00 PM - END OF HACK FOR THE DAY<br>
+            7:30 PM - SPONSORS DINNER<br><br>
 
             <span style="font-family: Ultrabold_GraublauWeb;">SATURDAY</span><br>
             9:00 AM - START OF HACK FOR THE DAY<br>
             9:00 AM - (VERY OPTIONAL) PITCH WORKSHOP<br>
+            12:00 PM - FREE LUNCH: PIZZAS, SOFT DRINKS, AND BEERS<br>
             7:00 PM - END OF HACK FOR THE DAY<br><br>
 
             <span style="font-family: Ultrabold_GraublauWeb;">SUNDAY</span><br>
@@ -57,6 +59,7 @@ if ( window.location.href.includes( "lang=english" ) ) {
             11:00 AM - PRESENTATIONS<br>
             TO BE ANNOUNCED - JUDGING PERIOD<br>
             TO BE ANNOUNCED - PRESENT WINNERS<br>
+            TO BE ANNOUNCED - FREE LUNCH AT A RESTAURANT TO BE ANNOUNCED<br>
         `;
         $( '.alojamientos_label' ).innerText = `ACCOMODATIONS`;
     }
