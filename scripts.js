@@ -49,9 +49,6 @@ if ( window.location.href.includes( "lang=english" ) ) {
     if ( page_were_on === "horario.html" ) {
         $( '.horario_label' ).innerText = `SCHEDULE`;
         $( '.horario_parte_1' ).innerHTML = `
-            <span style="font-family: Ultrabold_GraublauWeb;">THURSDAY</span><br>
-            2:00 PM - LARP IN THE PARK<br><br>
-
             <span style="font-family: Ultrabold_GraublauWeb;">FRIDAY</span><br>
             2:00 PM - POTENTIAL WORKSHOP<br>
             3:00 PM - KAPITALEX WORKSHOP<br>
