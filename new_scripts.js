@@ -37,9 +37,6 @@ if ( window.location.href.includes( "lang=english" ) ) {
         `;
         $( '.horario_label' ).innerText = `SCHEDULE`;
         $( '.horario_parte_1' ).innerHTML = `
-            <span style="font-family: Ultrabold_GraublauWeb;">THURSDAY</span><br>
-            2:00 PM - LARP IN THE PARK<br><br>
-
             <span style="font-family: Ultrabold_GraublauWeb;">FRIDAY</span><br>
             2:00 PM - BASE58 WORKSHOP (ONLINE)<br>
             3:00 PM - KAPITALEX WORKSHOP (LIVE)<br>
