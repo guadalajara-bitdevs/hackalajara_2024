@@ -50,12 +50,13 @@ if ( window.location.href.includes( "lang=english" ) ) {
         $( '.horario_label' ).innerText = `SCHEDULE`;
         $( '.horario_parte_1' ).innerHTML = `
             <span style="font-family: Ultrabold_GraublauWeb;">FRIDAY</span><br>
-            2:00 PM - POTENTIAL WORKSHOP<br>
-            3:00 PM - KAPITALEX WORKSHOP<br>
+            2:00 PM - BASE58 WORKSHOP (online)<br>
+            3:00 PM - KAPITALEX WORKSHOP (live)<br>
+            4:00 PM - VIVA BITCOIN WORKSHOP (live)<br>
         `;
         $( '.horario_ul' ).innerHTML = ``;
         $( '.horario_parte_2' ).innerHTML = `
-            4:00 PM - BREAK<br>
+            4:30 PM - BREAK<br>
             5:00 PM - OPENING CEREMONY<br>
             5:30 PM - TEAM FORMATION, IDEATION, AND BEGIN HACK<br>
             7:00 PM - END OF HACK FOR THE DAY<br><br>
@@ -63,6 +64,7 @@ if ( window.location.href.includes( "lang=english" ) ) {
             <span style="font-family: Ultrabold_GraublauWeb;">SATURDAY</span><br>
             9:00 AM - START OF HACK FOR THE DAY<br>
             9:00 AM - (VERY OPTIONAL) PITCH WORKSHOP<br>
+            12:00 PM - FREE LUNCH: PIZZAS, SOFT DRINKS, AND BEERS< PROVIDED CONSTANTLY THE REST OF THE DAY<br>
             7:00 PM - END OF HACK FOR THE DAY<br><br>
 
             <span style="font-family: Ultrabold_GraublauWeb;">SUNDAY</span><br>
