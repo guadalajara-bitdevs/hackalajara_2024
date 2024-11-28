@@ -49,7 +49,7 @@ if ( window.location.href.includes( "lang=english" ) ) {
 
             <span style="font-family: Ultrabold_GraublauWeb;">SATURDAY</span><br>
             9:00 AM - START OF HACK FOR THE DAY<br>
-            9:00 AM - (VERY OPTIONAL) PITCH WORKSHOP<br>
+            12:00 PM - (VERY OPTIONAL) PITCH WORKSHOP<br>
             12:00 PM - FREE LUNCH: PIZZAS, SOFT DRINKS, AND BEERS, PROVIDED CONSTANTLY THE REST OF THE DAY<br>
             7:00 PM - END OF HACK FOR THE DAY<br><br>
 
