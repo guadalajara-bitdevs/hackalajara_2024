@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+    <head>
+        <title>Hackalajara</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <style>
+            * {
+                box-sizing: border-box;
+                font-size: 1.15rem;
+                font-family: Arial, sans-serif;
+            }
+            @font-face {
+                font-family: GraublauWeb;
+                src: url("https://supertestnet.github.io/hackalajara_2024/NeueMachina-Regular.otf") format("opentype");
+            }
+            @font-face {
+                font-family: Ultrabold_GraublauWeb;
+                src: url("https://supertestnet.github.io/hackalajara_2024/NeueMachina-Ultrabold.otf") format("opentype");
+            }
+            html {
+                line-height: 1.25;
+                padding: 0;
+                background-color: black;
+                background: linear-gradient(to left, #72f7bd 0%, black 30%, rgb(0,0,0,0) 50%), url("https://supertestnet.github.io/hackalajara_2024/starfield.png"),linear-gradient(to left, #72f7bd, black 30%);
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: 50% 50%;
+                color: white;
+            }
+            body {
+                padding: 3rem 1rem;
+                margin: auto;
+            }
+            a {
+                color: #42ddf5;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            input {
+                line-height: 1.25;
+                width: 100%;
+                height: 1.8rem;
+                font-size: 1.15rem;
+                border: 1px solid grey;
+            }
+            body * {
+                font-family: GraublauWeb,sans-serif;
+            }
+            .all_content {
+                max-width: 800px;
+                margin: auto;
+                text-align: center;
+            }
+            .ultrabold {
+                font-family: Ultrabold_GraublauWeb,sans-serif;
+                font-weight: 10;
+                font-size: 1.5rem;
+            }
+            .uppercase {
+                text-transform: uppercase;
+            }
+            .seccion {
+                padding-top: 1rem;
+            }
+            .centerable {
+                text-align: center;
+            }
+            .centerable p {
+                margin: auto;
+            }
+            .title_and_subtitle {
+                cursor: pointer;
+            }
+            .title {
+                max-width: 20rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .title * {
+                font-family: Ultrabold_GraublauWeb,sans-serif;
+                font-weight: 10;
+                font-size: 2rem;
+            }
+            .subtitle, .sub_subtitle {
+                text-align: center;
+                font-size: 75%;
+                padding-bottom: 1rem;
+                border-bottom: 1px solid white;
+            }
+            .sub_subtitle {
+                border-bottom: 0;
+                margin-top: 1rem !important;
+            }
+            .logos {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .logo {
+                max-width: 100%;
+                width: 250px;
+                margin-left: .5rem;
+                margin-right: .5rem;
+            }
+            .bitdevsgdl_logo {
+                margin-bottom: 1rem;
+            }
+            .double_buttons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 2rem;
+            }
+            .btn {
+                border: 1px solid #333333;
+                color: #333333;
+                height: 2.2rem;
+                width: 10rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-transform: uppercase;
+                padding: .3rem;
+                font-weight: bold;
+                cursor: pointer;
+                background-color: rgb(114, 247, 189, 60%);
+                margin-bottom: 1rem;
+            }
+            .btn span {
+                font-size: 75%;
+            }
+            .pgraph, .pgraph *, .pgraph ul li {
+                font-size: 1rem;
+            }
+            .bottom_line {
+                padding-top: 2rem;
+                border-bottom: 1px solid white;
+                width: 100%;
+            }
+            .indented_left {
+                margin-left: 10%;
+            }
+            .double_indented_left {
+                margin-left: 20%;
+            }
+            .menu {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin-top: 3rem;
+            }
+            .face {
+                display: inline-block;
+                width: 180px;
+                height: 180px;
+                background-size: cover;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                border-radius: 50%;
+            }
+            @media screen and (max-width: 700px) {
+                .title_and_subtitle {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .subtitle {
+                    width: 100%;
+                    max-width: none;
+                }
+                .logos {
+                    display: block;
+                }
+                .logo {
+                    width: 100%;
+                }
+                .btn {
+                    width: 100%;
+                }
+                .bottom_line {
+                    border-bottom: 1px solid white;
+                    width: 100%;
+                }
+                .indented_left {
+                    margin-left: auto;
+                }
+                .double_indented_left {
+                    margin-left: auto;
+                }
+                /* */
+            }
+        </style>
+        <script>
+            var $ = document.querySelector.bind( document );
+            var $$ = document.querySelectorAll.bind( document );
+            var url_params = new URLSearchParams( window.location.search );
+            var url_keys = url_params.keys();
+            var $_GET = {}
+            for ( var key of url_keys ) $_GET[ key ] = url_params.get( key );
+        </script>
+    </head>
+    <body>
+        <div class="all_content">
+            <div class="title_and_subtitle">
+                <img style="width: 100%; max-width: 700px" src="https://hackalajara.xyz/hackalajara-logo.png" alt="Logotipo de Hackalajara">
+                <div class="centerable">
+                    <p class="uppercase subtitle">
+                        Viernes 29 de noviembre - domingo 1 de diciembre de 2024
+                    </p>
+                    <p class="uppercase sub_subtitle">
+                        Presentado por
+                    </p>
+                </div>
+            </div>
+            <div class="logos">
+                <div>
+                    <img src="https://hackalajara.xyz/Guadalajara%20Bitcoin.png" class="logo btcgdl_logo" alt="Logotipo de Bitcoin Guadalajara">
+                </div>
+                <div class="bitdevsgdl_logo">
+                    Bitdevs&nbsp;GDL
+                </div>
+                <div>
+                    <img src="data:image/png;base64,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" class="logo pleblab_logo" alt="Logo de PlebLab">
+                </div>
+            </div> <!-- end of logos -->
+            <div class="double_buttons">
+                <div class="btn registrar_btn" style="margin-top: -1rem; background-color: white;" onclick="window.open( 'https://evento.so/p/evt_zdoAEzyn4nwJca2i', '_blank' );">
+                    <span style="margin-top: 5px;">Regístrate aquí</span>
+                    <span>&gt;</span>
+                </div>
+                <div>&nbsp;&nbsp;</div>
+                <div class="btn lang_btn" style="margin-top: -1rem">
+                    <span style="margin-top: 5px;">English</span>
+                    <span>&gt;</span>
+                </div>
+            </div>
+            <div class="patrocinadores">
+                <p class="uppercase sub_subtitle patrocinadores_label" style="max-width: 100%; font-size: 150%;">
+                    Patrocinado por
+                </p>
+                <div class="logos">
+                    <div>
+                        <img src="https://hackalajara.xyz/kapitalex-logo-2.png" class="logo kapitalex_logo" alt="Logotipo de Kapitalex">
+                    </div>
+                    <div>
+                        <img src="https://hackalajara.xyz/base58%20logo.jpg" class="logo base58_logo" alt="Logotipo de Base58">
+                    </div>
+                    <div>
+                        <img src="https://i.ibb.co/ky7Zs0G/bitcoin-news-logo.png" class="logo bitcoinnews_logo" alt="Logotipo de Bitcoin News">
+                    </div>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSddgMAo8eRTDdpHebAsmXcij3-KbhhcBqlqQ&s" class="logo bitrefill_logo" alt="Logotipo de Bitrefill">
+                    </div>
+                    <div>
+                        <img src="https://pbs.twimg.com/profile_images/1635136506972217345/MwiLB-7T_400x400.jpg" class="logo vivabitcoin_logo" alt="Logotipo de Viva Bitcoin">
+                    </div>
+                </div> <!-- end of logos -->
+            </div>
+            <div><h2>Hello</h2></div>
+        </div> <!-- end of all_content -->
+        <script src="./new_scripts.js?v=14"></script>
+    </body>
+</html>
