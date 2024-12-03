@@ -1,6 +1,5 @@
 $( '.title_and_subtitle' ).onclick = () => {window.location.href = './';}
 $( '.lang_btn' ).onclick = () => {window.location.href = window.location.protocol + "//" + window.location.hostname + window.location.pathname + "?lang=english";}
-$( '.contacto_btn' ).onclick = () => {window.location.href = "./nuevo_contacto.html";}
 if ( window.location.href.includes( "lang=english" ) ) {
     $( '.title_and_subtitle' ).onclick = () => {window.location.href = './' + "?lang=english";}
     $( '.subtitle' ).innerText = `Friday November 29 - Sunday December 1, 2024`;
